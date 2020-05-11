@@ -1,0 +1,29 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="leib.demo.dao.UserDAO">
+
+
+
+    <insert id="save" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into t_user values (#{id},#{name},#{age},#{bir})
+    </insert>
+
+    <update id="update" parameterType="User">
+        update t_user
+        set name=#{name},age=#{age},bir=#{bir}
+        where id = #{id}
+    </update>
+
+
+    <select id="findAll" resultType="User">
+        select id,name,age,bir from t_user
+    </select>
+
+    <delete id="delete" parameterType="String">
+        delete from t_user where id = #{id}
+    </delete>
+
+    <select id="finById" parameterType="String" resultType="User">
+        select id,name,age,bir from t_user where id = #{id}
+    </select>
+
+</mapper>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="vue-back-end:war">
+    <output-path>$PROJECT_DIR$/vue-back-end/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>vue-back-end</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="vue_cli.war">
+      <element id="artifact" artifact-name="vue-back-end:war exploded" />
+    </root>
+  </artifact>
+</component>

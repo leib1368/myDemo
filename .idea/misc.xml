@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/vue-back-end" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mybatisPlus/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitMQ/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitMQ-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/security/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/vue-bootstrap/pom.xml" />
+        <option value="$PROJECT_DIR$/travels-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/vue-back-end/pom.xml" />
       </list>
     </option>
   </component>

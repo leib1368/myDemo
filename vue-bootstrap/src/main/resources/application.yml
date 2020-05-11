@@ -1,0 +1,19 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /users
+
+
+spring:
+  application:
+    name: users
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bootvue?characterEncoding=UTF8
+    username: root
+    #yml文件纯数字需要加 ''
+    password: '0000'
+mybatis:
+  mapper-locations: classpath:leib/demo/mapper/*.xml
+  type-aliases-package: leib.demo.entity

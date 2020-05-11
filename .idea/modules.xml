@@ -6,6 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/mybatisPlus/mybatisPlus.iml" filepath="$PROJECT_DIR$/mybatisPlus/mybatisPlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ-springboot/rabbitMQ-springboot.iml" filepath="$PROJECT_DIR$/rabbitMQ-springboot/rabbitMQ-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro/shiro.iml" filepath="$PROJECT_DIR$/shiro/shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travels-demo/travels-demo.iml" filepath="$PROJECT_DIR$/travels-demo/travels-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vue-back-end/vue-back-end.iml" filepath="$PROJECT_DIR$/vue-back-end/vue-back-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vue-bootstrap/vue-bootstrap.iml" filepath="$PROJECT_DIR$/vue-bootstrap/vue-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vue-front-end/vue-front-end.iml" filepath="$PROJECT_DIR$/vue-front-end/vue-front-end.iml" />
     </modules>
   </component>
 </project>
