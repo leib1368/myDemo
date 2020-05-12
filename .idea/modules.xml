@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/element-ui/element-ui.iml" filepath="$PROJECT_DIR$/element-ui/element-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/myDemo.iml" filepath="$PROJECT_DIR$/myDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisPlus/mybatisPlus.iml" filepath="$PROJECT_DIR$/mybatisPlus/mybatisPlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" />
@@ -11,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/travels-demo/travels-demo.iml" filepath="$PROJECT_DIR$/travels-demo/travels-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/vue-back-end/vue-back-end.iml" filepath="$PROJECT_DIR$/vue-back-end/vue-back-end.iml" />
       <module fileurl="file://$PROJECT_DIR$/vue-bootstrap/vue-bootstrap.iml" filepath="$PROJECT_DIR$/vue-bootstrap/vue-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vue-element-admin/vue-element-admin.iml" filepath="$PROJECT_DIR$/vue-element-admin/vue-element-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/vue-front-end/vue-front-end.iml" filepath="$PROJECT_DIR$/vue-front-end/vue-front-end.iml" />
     </modules>
   </component>
