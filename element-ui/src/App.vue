@@ -4,6 +4,8 @@
     <br><br><br>
     <a href="#/button">button</a>
     <a href="#/layout">layout</a>
+    <a href="#/container">container</a>
+    <a href="#/radio">radio</a>
     <router-view/>
   </div>
 </template>

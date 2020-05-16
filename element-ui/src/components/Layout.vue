@@ -6,8 +6,7 @@
           <el-col :span="12" style="border: 1px red solid;">12份 占（1/2）</el-col>
           <el-col :span="12" style="border: 1px red solid">12份 占（1/2）</el-col>
         </el-row>
-      <el-header></el-header>
-      <el-header></el-header>
+
 
     </div>
 </template>

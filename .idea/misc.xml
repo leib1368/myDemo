@@ -14,7 +14,16 @@
         <option value="$PROJECT_DIR$/vue-bootstrap/pom.xml" />
         <option value="$PROJECT_DIR$/travels-demo/pom.xml" />
         <option value="$PROJECT_DIR$/vue-back-end/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-jedis-01/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-springboot-02/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-srpingboot-01/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/redis-springboot/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

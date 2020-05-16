@@ -1,6 +1,8 @@
 # element
 
 > A Vue.js project
+>index.html → main.js → app.vue → index.js → components
+https://blog.csdn.net/zbl744949461/article/details/80476888
 
 ## Build Setup
 

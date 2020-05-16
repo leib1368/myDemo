@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shiro" />
+        <module name="redis-srpingboot-01" />
         <module name="security" />
         <module name="vue-back-end" />
         <module name="rabbitMQ-springboot" />
@@ -16,11 +17,20 @@
         <module name="vue-bootstrap" />
         <module name="travels-demo" />
       </profile>
+      <profile name="Annotation profile for redis-jedis-01" enabled="true">
+        <sourceOutputDir name="../redis-jedis-01/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../redis-jedis-01/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redis-jedis" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mybatisPlus" target="1.8" />
       <module name="rabbitMQ" target="1.8" />
       <module name="rabbitMQ-springboot" target="1.8" />
+      <module name="redis-jedis" target="1.5" />
+      <module name="redis-springboot" target="1.5" />
+      <module name="redis-srpingboot-01" target="1.8" />
       <module name="security" target="1.8" />
       <module name="shiro" target="1.8" />
       <module name="travels-demo" target="1.8" />
@@ -32,6 +42,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mybatisPlus" options="-parameters" />
       <module name="rabbitMQ-springboot" options="-parameters" />
+      <module name="redis-srpingboot-01" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="shiro" options="-parameters" />
       <module name="travels-demo" options="-parameters" />
