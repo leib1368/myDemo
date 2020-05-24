@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/elastic-api/elastic-api.iml" filepath="$PROJECT_DIR$/elastic-api/elastic-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/element-ui/element-ui.iml" filepath="$PROJECT_DIR$/element-ui/element-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/element_users/element_users.iml" filepath="$PROJECT_DIR$/element_users/element_users.iml" />
       <module fileurl="file://$PROJECT_DIR$/element_users_back/element_users_back.iml" filepath="$PROJECT_DIR$/element_users_back/element_users_back.iml" />

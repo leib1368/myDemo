@@ -7,16 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="element_users_back" />
+        <module name="elastic-api" />
+        <module name="rabbitMQ" />
         <module name="shiro" />
         <module name="security" />
-        <module name="vue-bootstrap" />
+        <module name="element_users_back" />
         <module name="file" />
         <module name="vue-back-end" />
         <module name="rabbitMQ-springboot" />
         <module name="redis-springboot-01" />
         <module name="mybatisPlus" />
-        <module name="rabbitMQ" />
+        <module name="vue-bootstrap" />
         <module name="travels-demo" />
       </profile>
       <profile name="Annotation profile for redis-jedis-01" enabled="true">
@@ -26,14 +27,14 @@
         <module name="redis-jedis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
+      <module name="elastic-api" target="1.8" />
       <module name="element_users_back" target="1.8" />
       <module name="file" target="1.8" />
       <module name="mybatisPlus" target="1.8" />
       <module name="rabbitMQ" target="1.8" />
       <module name="rabbitMQ-springboot" target="1.8" />
-      <module name="redis-jedis" target="1.5" />
-      <module name="redis-springboot" target="1.5" />
+      <module name="redis-jedis" target="8" />
       <module name="redis-springboot-01" target="1.8" />
       <module name="security" target="1.8" />
       <module name="shiro" target="1.8" />
@@ -44,6 +45,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elastic-api" options="-parameters" />
       <module name="element_users_back" options="-parameters" />
       <module name="file" options="-parameters" />
       <module name="mybatisPlus" options="-parameters" />
