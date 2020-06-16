@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/redis-springboot-01/redis-springboot-01.iml" filepath="$PROJECT_DIR$/redis-springboot-01/redis-springboot-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro/shiro.iml" filepath="$PROJECT_DIR$/shiro/shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-jsp-shiro/springboot-jsp-shiro.iml" filepath="$PROJECT_DIR$/springboot-jsp-shiro/springboot-jsp-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mongodb-demo/springboot-mongodb-demo.iml" filepath="$PROJECT_DIR$/springboot-mongodb-demo/springboot-mongodb-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/travels-demo/travels-demo.iml" filepath="$PROJECT_DIR$/travels-demo/travels-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/vue-back-end/vue-back-end.iml" filepath="$PROJECT_DIR$/vue-back-end/vue-back-end.iml" />
       <module fileurl="file://$PROJECT_DIR$/vue-bootstrap/vue-bootstrap.iml" filepath="$PROJECT_DIR$/vue-bootstrap/vue-bootstrap.iml" />

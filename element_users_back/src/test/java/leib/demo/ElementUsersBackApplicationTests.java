@@ -16,12 +16,12 @@ class ElementUsersBackApplicationTests {
 
     @Test
     void contextLoads() {
-        User user = new User();
+/*        User user = new User();
         user.setName("法外狂徒");
         user.setBir(new Date());
         user.setAddress("天龙人");
         userService.save(user);
-        userService.findAll().forEach(userAll-> System.out.println(userAll));
+        userService.findAll().forEach(userAll-> System.out.println(userAll));*/
     }
 
 }

@@ -4,9 +4,13 @@
 
 
     <!--查询所有方法-->
-    <select id="findAll" resultType="User">
-        select id,name,bir,sex,address
+    <select id="findAll" resultType="User" parameterType="leib.demo.dto.UserDto">
+        select *
         from t_users
+    </select>
+
+    <select id="findTotal" resultType="int" >
+        select count(0) from t_users
     </select>
 
     <!--保存用户信息-->

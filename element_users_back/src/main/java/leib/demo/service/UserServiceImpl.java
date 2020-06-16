@@ -1,6 +1,8 @@
 package leib.demo.service;
 
+import com.github.pagehelper.PageHelper;
 import leib.demo.dao.UserDAO;
+import leib.demo.dto.UserDto;
 import leib.demo.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,8 +23,10 @@ public class UserServiceImpl implements UserService {
     UserDAO userDAO;
 
     @Override
-    public List<User> findAll() {
-        return userDAO.findAll() ;
+    public List<User> findAll(UserDto userDto) {
+
+        PageHelper.startPage(userDto.getPage(), userDto.getSize());
+        return userDAO.findAll(userDto) ;
     }
 
     @Override
@@ -38,5 +42,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public void update(User user) {
         userDAO.update(user);
+    }
+
+    @Override
+    public int findTotal() {
+        return userDAO.findTotal();
     }
 }

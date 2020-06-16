@@ -7,18 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="elastic-api" />
-        <module name="rabbitMQ" />
-        <module name="shiro" />
-        <module name="security" />
-        <module name="element_users_back" />
         <module name="file" />
         <module name="vue-back-end" />
-        <module name="rabbitMQ-springboot" />
-        <module name="redis-springboot-01" />
-        <module name="mybatisPlus" />
+        <module name="elastic-api" />
         <module name="vue-bootstrap" />
+        <module name="rabbitMQ" />
+        <module name="shiro" />
+        <module name="mybatisPlus" />
+        <module name="redis-springboot-01" />
+        <module name="springboot-mongodb-demo" />
+        <module name="element_users_back" />
+        <module name="rabbitMQ-springboot" />
+        <module name="security" />
         <module name="travels-demo" />
+        <module name="springboot-jsp-shiro" />
       </profile>
       <profile name="Annotation profile for redis-jedis-01" enabled="true">
         <sourceOutputDir name="../redis-jedis-01/target/generated-sources/annotations" />
@@ -38,6 +40,8 @@
       <module name="redis-springboot-01" target="1.8" />
       <module name="security" target="1.8" />
       <module name="shiro" target="1.8" />
+      <module name="springboot-jsp-shiro" target="1.8" />
+      <module name="springboot-mongodb-demo" target="1.8" />
       <module name="travels-demo" target="1.8" />
       <module name="vue-back-end" target="1.7" />
       <module name="vue-bootstrap" target="1.8" />
@@ -53,6 +57,8 @@
       <module name="redis-springboot-01" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="shiro" options="-parameters" />
+      <module name="springboot-jsp-shiro" options="-parameters" />
+      <module name="springboot-mongodb-demo" options="-parameters" />
       <module name="travels-demo" options="-parameters" />
       <module name="vue-back-end" options="-parameters" />
       <module name="vue-bootstrap" options="-parameters" />

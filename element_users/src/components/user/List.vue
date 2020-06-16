@@ -12,28 +12,28 @@
                     <span style="margin-left: 10px">{{ scope.row.id }}</span>
                 </template>
             </el-table-column>
-
             <el-table-column
                 label="姓名"
                 width="180">
                 <template slot-scope="scope">
+                    <!--hover 鼠标悬浮时显示-->
                     <el-popover trigger="hover" placement="top">
                         <p>姓名: {{ scope.row.name }}</p>
                         <p>住址: {{ scope.row.address }}</p>
+
                         <div slot="reference" class="name-wrapper">
                             <el-tag size="medium">{{ scope.row.name }}</el-tag>
                         </div>
+
                     </el-popover>
                 </template>
             </el-table-column>
-
             <el-table-column label="生日" prop="bir"></el-table-column>
             <el-table-column label="性别" prop="sex"></el-table-column>
             <el-table-column label="地址" prop="address"></el-table-column>
 
             <el-table-column
                 align="right">
-
                 <template slot="header" slot-scope="scope">
                     <el-input
                         v-model="search"
@@ -47,33 +47,41 @@
                         @click="handleEdit(scope.$index, scope.row)">Edit
                     </el-button>
 
+                    <!--气泡确认框 点击元素，弹出气泡确认框。-->
                     <el-popconfirm
                         confirmButtonText='好的'
                         cancelButtonText='不用了'
                         icon="el-icon-info"
                         iconColor="red"
                         title="确定删除吗？"
-                        @onConfirm="handleDelete(scope.$index, scope.row)"
-                    >
+                        @onConfirm="handleDelete(scope.$index, scope.row)">
+                        <!--点击确认时触发 ↑ -->
                         <el-button slot="reference" size="mini"
                                    type="danger" >Delete 删除</el-button>
                     </el-popconfirm>
-
-
                 </template>
             </el-table-column>
         </el-table>
 
+        <!--分页-->
         <el-pagination
-            layout="prev, pager, next, jumper   "
-            :page-size="1"
-            :total="50">
+            layout="total, sizes, prev, pager, next, jumper"
+            :page-size="size"
+            :page-sizes="[1, 3, 7, 10]"
+            :current-page="page"
+            :total="totalPage"
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+        >
         </el-pagination>
 
+        <!--添加按钮-->
         <el-button style="margin: 10px 0px;" type="success" size="mini" @click="saveInfo">添加</el-button>
 
-
+        <!--添加功能-->
+        <!--非空处理 尚未完成-->
         <transition name="el-zoom-in-center">
+            <!--transition内置过渡动画 show为真时显示-->
             <div v-show="show" class="transition-box">
 
                 <el-form ref="form" :model="form" label-suffix=":" label-width="80px">
@@ -99,7 +107,8 @@
                     </el-form-item>
                     <el-form-item>
                         <el-button type="primary" @click="onSubmit">保存用户</el-button>
-                        <el-button>取消</el-button>
+                        <!--取消这个地方其实应该加一个show false以及清空数据-->
+                        <el-button @click="onCancelButton">取消</el-button>
                     </el-form-item>
                 </el-form>
 
@@ -114,6 +123,9 @@
         name: 'List',
         data() {
             return {
+                size: 3,
+                page: 1,
+                totalPage: 10,
                 tableData: [],
                 search: '',
                 show: false,
@@ -126,6 +138,20 @@
             }
         },
         methods: {
+            handleSizeChange(val) {
+                console.log(`每页 ${val} 条`);
+                this.size=val;
+                this.findAll();
+            },
+            handleCurrentChange(val) {
+                console.log(`当前页: ${val}`);
+                this.page=val;
+                this.findAll();
+            },
+            onCancelButton(){
+                this.show = false ;
+                this.form = {};
+            },
             saveInfo(){
                 if(this.show == false){
                     this.show = true ;
@@ -174,15 +200,30 @@
                 })
             },
             findAll() {
-                this.$http.get("http://localhost:8989/user/findAll").then(res => {
+                this.$http.get("http://localhost:8989/user/findAll",{
+                    params: {
+                        page: this.page,
+                        size: this.size
+                    }
+                }).then(res => {
                     this.tableData = res.data;
+                    console.log('当前页'+this.page);
+                    console.log('当前页大小'+this.size);
+                })
+            },
+            findTotal() {
+                this.$http.get("http://localhost:8989/user/findTotal",{
+
+                }).then(res => {
+                    console.log('1111--------1'+res.data);
+                    this.totalPage = res.data;
+                    console.log(res.data);
                 })
             }
         },
         created() {
             this.findAll();
-
-
+            this.findTotal();
         }
 
     }

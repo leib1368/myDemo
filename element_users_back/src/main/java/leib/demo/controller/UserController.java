@@ -1,5 +1,6 @@
 package leib.demo.controller;
 
+import leib.demo.dto.UserDto;
 import leib.demo.entity.User;
 import leib.demo.service.UserService;
 import leib.demo.vo.Result;
@@ -39,8 +40,13 @@ public class UserController {
 
 
     @GetMapping("findAll")
-    private List<User> findAll(){
-        return userService.findAll();
+    private List<User> findAll(UserDto userDto){
+        return userService.findAll(userDto);
+    }
+
+    @GetMapping("findTotal")
+    private int findTotal(){
+        return userService.findTotal();
     }
 
     @PostMapping("save")

@@ -22,6 +22,8 @@
         <option value="$PROJECT_DIR$/redis-springboot-01/pom.xml" />
         <option value="$PROJECT_DIR$/element_users_back/pom.xml" />
         <option value="$PROJECT_DIR$/elastic-api/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mongodb-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jsp-shiro/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
