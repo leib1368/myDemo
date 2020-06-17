@@ -39,9 +39,10 @@ public class UserController {
      * 查询一个
      */
     @GetMapping("findOne")
-    public User findOne(String id) {
+    public User findOne(@RequestParam("aaa") String id) {
         return userService.finById(id);
     }
+    //RequestParam 前端传来的参数值
 
     /**
      * 删除用户

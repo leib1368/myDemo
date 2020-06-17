@@ -5,6 +5,8 @@ import User from "../components/User";
 import Student from "../components/Student";
 import UserAdd from "../components/UserAdd";
 import UserEdit from "../components/UserEdit";
+import Link from "../components/Link";
+
 
 Vue.use(Router)
 
@@ -20,5 +22,14 @@ export default new Router({
       ]
     },
     {path: '/student', component: Student},
+
+    //接收参数
+    {path: '/link/:id', component: Link ,name: 'linkTo',props: true},
+    //  props: true
+    {
+      path: '/link/:id',
+      components: { default: Link},
+      props: { default: true, sidebar: false }
+    }
   ]
 })
