@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo2MVC/demo2MVC.iml" filepath="$PROJECT_DIR$/demo2MVC/demo2MVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoBoot/demo.iml" filepath="$PROJECT_DIR$/demoBoot/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoMVC/demoMVC.iml" filepath="$PROJECT_DIR$/demoMVC/demoMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/elastic-api/elastic-api.iml" filepath="$PROJECT_DIR$/elastic-api/elastic-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/element-ui/element-ui.iml" filepath="$PROJECT_DIR$/element-ui/element-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/element_users/element_users.iml" filepath="$PROJECT_DIR$/element_users/element_users.iml" />
       <module fileurl="file://$PROJECT_DIR$/element_users_back/element_users_back.iml" filepath="$PROJECT_DIR$/element_users_back/element_users_back.iml" />
       <module fileurl="file://$PROJECT_DIR$/file/file.iml" filepath="$PROJECT_DIR$/file/file.iml" />
       <module fileurl="file://$PROJECT_DIR$/myDemo.iml" filepath="$PROJECT_DIR$/myDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-mapper/mybatis-mapper.iml" filepath="$PROJECT_DIR$/mybatis-mapper/mybatis-mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisPlus/mybatisPlus.iml" filepath="$PROJECT_DIR$/mybatisPlus/mybatisPlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitMQ-springboot/rabbitMQ-springboot.iml" filepath="$PROJECT_DIR$/rabbitMQ-springboot/rabbitMQ-springboot.iml" />

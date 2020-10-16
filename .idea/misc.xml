@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/demoMVC/demoMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/demoSpringMVC" />
     <file type="web" url="file://$PROJECT_DIR$/vue-back-end" />
   </component>
   <component name="MavenProjectsManager">
@@ -24,6 +26,13 @@
         <option value="$PROJECT_DIR$/elastic-api/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mongodb-demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jsp-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/demoMVC/demoMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/demoBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/demoSpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/demoMVC/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

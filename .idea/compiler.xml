@@ -7,20 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-jsp-shiro" />
         <module name="file" />
-        <module name="vue-back-end" />
         <module name="elastic-api" />
         <module name="vue-bootstrap" />
-        <module name="rabbitMQ" />
+        <module name="security" />
+        <module name="demoMVC" />
         <module name="shiro" />
         <module name="mybatisPlus" />
+        <module name="demoBoot" />
         <module name="redis-springboot-01" />
         <module name="springboot-mongodb-demo" />
         <module name="element_users_back" />
+        <module name="rabbitMQ" />
         <module name="rabbitMQ-springboot" />
-        <module name="security" />
+        <module name="mybatis-mapper" />
         <module name="travels-demo" />
-        <module name="springboot-jsp-shiro" />
+        <module name="vue-back-end" />
       </profile>
       <profile name="Annotation profile for redis-jedis-01" enabled="true">
         <sourceOutputDir name="../redis-jedis-01/target/generated-sources/annotations" />
@@ -30,9 +33,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="demoBoot" target="1.8" />
+      <module name="demoMVC" target="8" />
       <module name="elastic-api" target="1.8" />
       <module name="element_users_back" target="1.8" />
       <module name="file" target="1.8" />
+      <module name="mybatis-mapper" target="1.8" />
       <module name="mybatisPlus" target="1.8" />
       <module name="rabbitMQ" target="1.8" />
       <module name="rabbitMQ-springboot" target="1.8" />
@@ -43,15 +49,17 @@
       <module name="springboot-jsp-shiro" target="1.8" />
       <module name="springboot-mongodb-demo" target="1.8" />
       <module name="travels-demo" target="1.8" />
-      <module name="vue-back-end" target="1.7" />
+      <module name="vue-back-end" target="8" />
       <module name="vue-bootstrap" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demoBoot" options="-parameters" />
       <module name="elastic-api" options="-parameters" />
       <module name="element_users_back" options="-parameters" />
       <module name="file" options="-parameters" />
+      <module name="mybatis-mapper" options="-parameters" />
       <module name="mybatisPlus" options="-parameters" />
       <module name="rabbitMQ-springboot" options="-parameters" />
       <module name="redis-springboot-01" options="-parameters" />

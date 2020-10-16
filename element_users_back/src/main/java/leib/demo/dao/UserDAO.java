@@ -1,5 +1,6 @@
 package leib.demo.dao;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import leib.demo.dto.UserDto;
 import leib.demo.entity.User;
 import org.apache.ibatis.annotations.Mapper;
@@ -13,7 +14,7 @@ import java.util.List;
  */
 @Mapper
 @Repository
-public interface UserDAO {
+public interface UserDAO extends BaseMapper<User> {
     List<User> findAll (UserDto userDto);
 
     void save(User user);

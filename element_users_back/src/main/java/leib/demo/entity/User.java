@@ -19,11 +19,12 @@ import java.util.Date;
 @ToString
 @Accessors(chain = true)
 public class User {
-    private String id;
-    private String name;
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private Date bir;
-    private String sex;
-    private String address;
+    private int id;
+    private String userName;
+    private String password;
+//@JsonFormat(pattern = "yyyy-MM-dd")
+//    private Date bir;
+//    private String sex;
+//    private String address;
 
 }

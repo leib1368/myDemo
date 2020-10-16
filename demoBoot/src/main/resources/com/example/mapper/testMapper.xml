@@ -1,0 +1,14 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserDAO">
+    <select id="finById" resultType="User" parameterType="int">
+        select * from user where id = #{id};
+    </select>
+    <select id="findAll" resultType="User">
+        select id,name from user
+    </select>
+    <update id="update" parameterType="User">
+        update user
+        set name=#{name}
+        where id = #{id}
+    </update>
+</mapper>
